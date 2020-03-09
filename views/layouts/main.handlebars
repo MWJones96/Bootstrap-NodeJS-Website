@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Matthew Jones</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact Me</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href='https://www.dropbox.com/s/trvlk5rickcns63/Resume.pdf?dl=0'><span class="fa fa-file-text" style="display: inline-block;">&nbsp;&nbsp;</span>Resume</a></li>
+        <li><a href="https://github.com/MWJones96"><span class="fa fa-github" style="display: inline-block;">&nbsp;&nbsp;</span>GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/mwjones96/"><span class="fa fa-linkedin" style="display: inline-block;">&nbsp;&nbsp;</span>LinkedIn</a></li>
+        <li><a href="https://stackoverflow.com/users/12584129/mwjones96"><span class="fa fa-stack-overflow" style="display: inline-block;">&nbsp;&nbsp;</span>StackOverflow</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{{{body}}}
+
+</body>
+</html>
