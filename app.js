@@ -12,6 +12,7 @@ app.get('/', function (req, res) {
     xkcd(function (data) {
         currXKCD = data;
     });
+
 	matt_age = ((new Date() - new Date(1996, 7, 8)) / (60 * 60 * 24 * 365 * 1000)).toFixed(2);
 
     res.render('home', {matt_age_int: Math.floor(matt_age), matt_age: matt_age, xkcd: currXKCD});
