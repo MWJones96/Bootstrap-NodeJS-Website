@@ -30,8 +30,7 @@ app.get('/projects', function(req, res) {
 
         var d1 = new Date(p1_year);
         var d2 = new Date(p2_year);
-
-        console.log(d1);
+        
         return d2 - d1;
     });
 

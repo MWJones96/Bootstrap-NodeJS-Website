@@ -10,17 +10,21 @@
   </div>
 </div>
 
-<div class="col-lg-9 col-md-10 col-sm-11 col-xs-12" style="margin: auto">
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-12" style="margin: auto">
   <div class="row">
 
   {{#each projects}}
-    <div class="card col-lg-4 col-md-6 col-sm-6 col-xs-12">
+    <div class="card col-lg-6 col-md-12 col-sm-12 col-xs-12">
       <br>
-      <img class="card-img-top" src="{{img}}" style="height: 175px; width: auto; margin: auto;">
+      <img class="card-img-top" src="{{img}}" style="height: 30vh; width: auto; margin: auto;">
       <div class="card-body">
         <h5 class="card-title">{{title}} - {{year}}</h5>
         <p class="card-text">{{desc}}</p>
-        <a href="{{gh}}" class="btn btn-primary">View on GitHub</a>
+        {{#if gh}}
+            <a href="{{gh}}" class="btn btn-primary">View on GitHub</a>
+        {{else}}
+            <i>{{no_gh_desc}}</i>
+        {{/if}}
       </div>
     </div>
   {{/each}}
