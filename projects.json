@@ -1,0 +1,11 @@
+{
+    "projects": [
+        {"title": "SimoriON", "img": "simori_on.png", "desc": "A project emulating the functionality of a Yamaha Tenori-On made with a team of 4 others for the second-year Software Engineering class at the University of Exeter.", "gh": "https://github.com/MWJones96/SimoriOn", "year": "03/2016"},
+        {"title": "Java Chess Game", "img": "chess.png", "desc": "", "gh": "", "year": "10/2017"},
+        {"title": "Calculator", "img": "calculator.png", "desc": "", "gh": "", "year": "06/2018"},
+        {"title": "Chip8 Interpreter", "img": "chip8.png", "desc": "", "gh": "", "year": "02/2018"},
+        {"title": "Tetris", "img": "py_tetris.png", "desc": "", "gh": "", "year": "10/2018"},
+        {"title": "Snake Game", "img": "snake_game.png", "desc": "", "gh": "", "year": "10/2018"},
+        {"title": "Weather App", "img": "weather.png", "desc": "", "gh": "", "year": "04/2017"}
+    ]
+}

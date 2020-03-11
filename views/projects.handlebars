@@ -4,7 +4,7 @@
     <div class="container-fluid bg-3 text-left">
        <h3 style="text-align: center">Projects</h3>
        <p>Hi. Matt again! This page features some of the highlighted projects that I have undertaken over the course of
-         many years.
+         many years, in reverse chronological order.
        </p>
     </div>
   </div>
@@ -12,95 +12,24 @@
 
 <div class="col-lg-9 col-md-10 col-sm-11 col-xs-12" style="margin: auto">
   <div class="row">
-  <div class="card col-lg-4 col-md-6 col-sm-6 col-xs-12">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
 
-  <div class="card col-lg-4 col-md-6 col-sm-6 col-xs-12 card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+  {{#each projects}}
+    <div class="card col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <br>
+      <img class="card-img-top" src="{{img}}" style="height: 175px; width: auto; margin: auto;">
+      <div class="card-body">
+        <h5 class="card-title">{{title}} - {{year}}</h5>
+        <p class="card-text">{{desc}}</p>
+        <a href="{{gh}}" class="btn btn-primary">View on GitHub</a>
+      </div>
     </div>
-  </div>
-
-  <div class="card col-lg-4 col-md-6 col-sm-6 col-xs-12 card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card col-lg-4 col-md-6 col-sm-6 col-xs-12 card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card col-lg-4 col-md-6 col-sm-6 col-xs-12 card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card col-lg-4 col-md-6 col-sm-6 col-xs-12 card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card col-lg-4 col-md-6 col-sm-6 col-xs-12 card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card col-lg-4 col-md-6 col-sm-6 col-xs-12 card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card col-lg-4 col-md-6 col-sm-6 col-xs-12 card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card col-lg-4 col-md-6 col-sm-6 col-xs-12 card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+  {{/each}}
   </div>
 </div>
 <br>
+
+<script>
+  $("document").ready(function() {
+    $("#projects").addClass("active");
+  });
+</script>
