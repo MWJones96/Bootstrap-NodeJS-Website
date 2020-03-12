@@ -10,6 +10,7 @@
         {"title": "EZ ML", "img": "sb.png", "desc": "A web application made with a team of 3 others at SB Hacks V, allowing users to create custom Machine Learning models without writing code, built using Python, Flask, Bootstrap, GCP Cloud Functions and Twilio API.", "gh": "https://github.com/MWJones96/SB-Hacks-Project-EZ-ML", "year": "01/2019"},
         {"title": "Research Portal", "img": "csse.png", "desc": "Worked with team of 6 others to build new website for USC CSSE (Center for Systems and Software Engineering), rebuilding old WordPress tech stack into Node.js, connecting USC students, staff and alumni worldwide with a variety of social functionality.", "gh": null, "no_gh_desc": "Source code in private repository.", "year": "12/2019"},
         {"title": "Weenix OS", "img": "weenix.png", "desc": "Developed OS functionality with team of 3 others across 3 separate assignments for CSCI402 at USC.", "gh": null, "no_gh_desc": "Source code not to be distributed at Professor's discretion.", "year": "04/2019"},
-        {"title": "eBay Search", "img": "ebay_search.png", "desc": "", "year": "04/2019"}
+        {"title": "eBay Search Android App", "img": "ebay_search_android.jpg", "desc": "An Android version of the eBay Search web application with the same functionality.", "gh": "https://github.com/MWJones96/CSCI-571---Homework-9---Spring-2019", "year": "04/2019"},
+        {"title": "eBay Search", "img": "ebay_search.png", "desc": "An Angular and Node.js web application for CSCI571 where user can search for products on eBay and show a detailed product view. Also allows user to save favorite products.", "gh": "https://github.com/MWJones96/CSCI571-HW8---Spring-2019", "year": "04/2019"}
     ]
 }
